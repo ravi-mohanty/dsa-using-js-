@@ -113,4 +113,60 @@
 
     // console.log(nestedArray.flat(1));                       -----------> without using any method
   
+//-------------------------------------  flaten the object ---------------------------------------------------------------
+  
+// const nestedObject = {
+//   name: "Alice",
+//   age: 30,
+//   address: {
+//     city: "Hyderabad",
+//     zip: "500001",
+//     country: {
+//       name: "India",
+//       continent: "Asia"
+//     }
+//   },
+//   job: {
+//     title: "Software Engineer",
+//     company: {
+//       name: "TechCorp",
+//       location: {
+//         city: "Bangalore",
+//         floor: 5,
+//         desk: {
+//           number: 42,
+//           hasWindowView: true
+//         }
+//       }
+//     }
+//   },
+//   hobbies: ["reading", "chess"],
+//   friends: [
+//     { name: "Bob", age: 28 },
+//     { name: "Carol", age: 32, pets: [{ type: "dog", name: "Rex" }] }
+//   ]
+// };
 
+// function nestedObjs(nestedObject, parent){
+//     const flatObj = {};
+//     const generateFlatObjects = (nestedObject, parent) => {
+//       for (let key in nestedObject) {
+        
+//            let newParent = parent+key;
+//            let val = nestedObject[key];
+//            if(typeof val ===  "object"){
+//             generateFlatObjects(val, newParent+".")
+//            }
+//            else { flatObj[newParent] = val}
+        
+//       }
+//     }
+//     generateFlatObjects(nestedObject, parent);
+
+    
+//     return flatObj;
+// }
+
+// console.log(nestedObjs(nestedObject, ""))
+
+// refernece link :  https://www.youtube.com/watch?v=s53pTpFw-94
